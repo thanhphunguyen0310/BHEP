@@ -53,11 +53,11 @@ Key Features
 ## Installation and Setup
 1. Clone the repository:
    ```bash
-   git clone <repository-url>
+   git clone (https://github.com/thanhphunguyen0310/BHEP_Web.git)
    ```
 2. Navigate to the project directory:
    ```bash
-   cd bhep-project
+   cd bhep-web
    ```
 3. Install dependencies:
    ```bash
