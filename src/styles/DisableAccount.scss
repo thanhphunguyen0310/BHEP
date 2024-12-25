@@ -1,0 +1,57 @@
+.disable-account-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5;
+
+    .disable-account-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 50px 80px;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+
+        .content {
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            width: 300px;
+
+            .form-item {
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+                width: 100%;
+
+                .ant-form-item-label {
+                    text-align: left;
+                }
+
+                .ant-input,
+                .ant-input-password {
+                    width: 100%;
+                }
+
+                label {
+                    font-weight: bold;
+                }
+
+                .required {
+                    color: red;
+                }
+            }
+
+            .ant-form-item {
+                margin-bottom: 16px;
+            }
+            .btn-disable{
+                display: flex;
+                justify-content: center;
+            }
+        }
+    }
+}

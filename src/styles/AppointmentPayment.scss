@@ -1,0 +1,32 @@
+.payment-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #d9d9d9;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+  
+  .radio-group {
+    width: 100%;
+  }
+  
+  .radio-option {
+    display: block;
+    padding: 10px;
+    border: 1px solid #d9d9d9;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+        background-color: aliceblue;
+    }
+  }
+  .payment-button {
+    margin-top: 20px; 
+    width: 100%
+  }

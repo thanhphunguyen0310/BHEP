@@ -1,0 +1,90 @@
+.appointment-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  min-height: 400px;
+  .appointment-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 25px;
+    border: 1px solid rgb(225, 225, 252);
+    border-radius: 8px;
+    background-color: #fff;
+    .appointment{
+        display: flex;
+        gap: 16px;
+        align-items: center;
+    }
+    .appointment-info {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      h3 {
+        margin: 0;
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      p {
+        margin: 4px 0;
+        font-size: 14px;
+        font-weight: 500;
+        svg {
+          margin-right: 10px;
+        }
+      }
+    }
+    .image {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-right: 16px;
+      .status {
+        margin-top: 8px;
+        font-size: 14px;
+        color: #555;
+        font-weight: 500;
+      }
+      .ant-avatar {
+        width: 100px;
+        height: 100px;
+        border: 1px solid rgb(225, 245, 252);
+      }
+    }
+    .btn-container{
+        display: flex;
+        justify-content: flex-end;
+        .btn {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+    
+            button {
+              width: 100px;
+            }
+          }
+  }
+}
+}
+.modal-content{
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    // justify-content: space-between;
+    // align-items: flex-start;
+    .status{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .btn-container{
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: flex-end;
+    }
+}
+

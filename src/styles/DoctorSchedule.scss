@@ -1,0 +1,66 @@
+.ant-modal-content {
+  .ant-modal-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .doctor-schedule-form {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 20px;
+      height: 337.6px;
+      width: 97%;
+      .calender {
+        padding: 20px 5px;
+        margin: 0 0;
+        height: 297.6px;
+      }
+      .time-display {
+        padding: 20px 5px;
+        height: 100%;
+        max-width: 400px;
+        .time-selected {
+          max-height: 170px;
+          overflow-y: auto;
+        }
+      }
+    }
+    .schedule-summary {
+      margin-bottom: 20px;
+      width: 97%;
+      .ant-list {
+        max-height: 200px;
+        overflow-y: auto;
+        .schedule-item {
+          width: 100%;
+          display: flex;
+          justify-content: flex-start;
+          flex-direction: column;
+          align-items: flex-start; // Đảm bảo các mục con căn lề theo chiều ngang
+          margin-bottom: 10px;
+
+          .date {
+            width: 70%;
+            font-weight: bold;
+            white-space: nowrap; // Ngăn ngừa ngày và giờ xuống dòng
+            overflow: hidden;
+            text-overflow: ellipsis; // Hiển thị dấu chấm nếu nội dung quá dài
+          }
+
+          .time {
+            width: 80%;
+            display: flex;
+            flex-wrap: wrap;
+            //  .ant-typography{
+            //   color: rgb(97, 205, 255);
+            //  }
+              > * {
+                margin-right: 7px; // Tạo khoảng cách giữa các thời gian
+                margin-bottom: 7px; // Đảm bảo các thời gian xuống dòng
+              }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,16 @@
+.container {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh; 
+    .content {
+      flex: 1; /* Nội dung chính mở rộng để điền đầy container */
+      .footer {
+        margin-top: auto;
+      }
+    }
+    
+  }
+
+ 
+  

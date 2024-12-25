@@ -1,0 +1,140 @@
+.header-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #eaeef6;
+  width: 100vw;
+  height: max-content;
+  border-bottom: 0.5px solid #8a8d8d;
+  z-index: 1000; // Ensure the header is above other content
+
+  .header-content {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding: 0 100px;
+      .logo {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 5px 10px;
+          text-decoration: none;
+          direction: row;
+
+          img {
+              width: 90px;
+              height: 90px;
+          }
+
+          .ant-typography {
+              margin: 0;
+              color: #3058A6;
+              font-size: 52px;
+              font-weight: bold;
+          }
+      }
+      
+      .menu-items {
+          background-color: #eaeef6;
+          display: flex;
+          width: 55%;
+          justify-content: space-between;
+          font-size: 18px;
+          font-weight: 500;
+          border-bottom: none;
+
+          .item {
+              display: flex;
+              align-items: center;
+          }
+      }
+
+      .button {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          .login-button,
+          .regist-button {
+              width: 120px;
+              margin-right: 10px;
+          }
+
+          .regist-button {
+              margin-right: 0;
+          }
+          .user-loggedin{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            .notification-icon{
+                cursor: pointer;
+                background-color: rgba(103, 168, 242, 0.2);
+                padding: 6px 6px;
+                border-radius: 50%;
+                color: #4287f5;
+                font-size: 30px;
+              }
+              .avatar {
+                width: 45px;
+                height: 45px;
+                border: 2px solid #3058a6; 
+                border-radius: 50%; 
+              }            
+          }
+      }
+  }
+}
+.menu-notification {
+    background-color: #fff; // Background color of the dropdown menu
+    border: 1px solid #ccc; // Border color
+    border-radius: 8px; // Rounded corners
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Subtle shadow for better visibility
+    min-width: 280px; // Set a fixed width for the dropdown menu
+  
+    .ant-list-item {
+      cursor: pointer;
+      padding: 10px 15px; // Padding inside each list item
+      border-bottom: 1px solid #f0f0f0; // Border between items
+      p{
+        font-size: 12px;
+        font-weight: 200;
+      }
+      &:hover {
+        background-color: #e7eef5; // Background color on hover
+      }
+    }
+    .unread-notification{
+      background-color: #e8ebeb;
+    }
+    .read-notification{
+      background-color: white;
+    }
+    .ant-list-item-meta-avatar {
+      margin-right: 10px; // Space between avatar and text
+    }
+  
+    .ant-list-item-meta-title {
+      font-weight: bold; // Bold text for the title
+    }
+  
+    .ant-list-item-meta-description {
+      font-weight: 600;
+    }
+  
+    .ant-list-item-meta {
+      flex: 1;
+    }
+  
+    .ant-avatar {
+      width: 40px;
+      height: 40px; // Set size for avatars
+      border: 2px solid #ccc; // Border around avatars
+      border-radius: 50%; // Make avatars circular
+    }
+  }

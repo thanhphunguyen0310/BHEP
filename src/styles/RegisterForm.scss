@@ -1,0 +1,35 @@
+.ant-form-item-required::after, 
+.ant-form-item-label > label.ant-form-item-required::before {
+  content: none !important;
+}
+.ant-modal {
+  width: max-content !important;
+  .ant-modal-title {
+    font-size: 30px;
+  }
+
+  .ant-modal-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .register-modal-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 25px;
+    gap: 0px 20px;
+  }
+
+  .register-form {
+    flex: 2;
+    width: 400px;
+    padding: 20px;
+    .forgot-password {
+      display: block;
+      text-align: right;
+      margin-bottom: 10px; // Adjust spacing as needed
+    }
+  }
+}

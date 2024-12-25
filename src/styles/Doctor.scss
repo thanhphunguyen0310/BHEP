@@ -1,0 +1,40 @@
+.doctor {
+    margin-top: 30px;
+    width: 100vw;
+    height: max-content;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    background-color: #F5FEFE;
+    
+    h1 {
+      padding: 20px 0;
+      font-size: 30px;
+      font-weight: 700;
+      color: #3058a6;
+    }
+  
+    .doctor-content {
+      display: flex;
+      flex-direction: column;
+      padding: 0 30px;
+      flex-wrap: wrap;
+  
+      .doctor-items {
+        align-items: center;
+        display: flex;
+        flex-wrap: wrap;
+        width: 75%;
+        gap: 20px 20px;
+        justify-content: center;
+      }
+  
+      .doctor-button {
+        width: 65%;
+        display: flex;
+        justify-content: flex-end;
+        padding: 20px 0;
+      }
+    }
+  }
+  

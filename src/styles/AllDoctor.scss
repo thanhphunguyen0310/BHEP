@@ -1,0 +1,31 @@
+.doctor-container {
+  margin-top: 50px;
+  background-color: #f5fefe;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  .title {
+    width: 75%;
+    display: flex;
+    justify-content: flex-start;
+    h1 {
+      padding: 20px 0;
+      font-size: 30px;
+      font-weight: 700;
+      color: #3058a6;
+    }
+  }
+  .all-doctor {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .doctor-card-list {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}
